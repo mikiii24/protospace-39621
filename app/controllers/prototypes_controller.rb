@@ -33,6 +33,7 @@ class PrototypesController < ApplicationController
       redirect_to prototype_path(params[:id])
     else
       render :edit, status: :unprocessable_entity
+    end
   end
 
   def destroy
